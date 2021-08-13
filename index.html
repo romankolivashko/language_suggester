@@ -1,22 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Change Me!</title>
+  <title>Survey time!</title>
 </head>
+
 <body>
-  <!-- <h3>Change Me!</h3> -->
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-5">Survey time!</h1>
-      <p class="lead">This is a sentence that occupies the entire horizontal space of its parent.</p>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Survey time!</h1>
+      <p class="lead">This is a simple questionaire, it was designed to help you decide what language you want to strat firts. After answering number of questions below this app will suggest few languages best suited for you.</p>
+      <hr class="my-4">
+
+      <div class="inner-container card-showing">
+        <p style="text-align: left"><strong>Please answer all the questions bellow to your best ability.</strong></p>
+        <form>
+          <div class="form-group">
+            <label for="firstLastName">
+              <h5>Some info about you</h5>
+            </label>
+            <input type="text" class="form-control" id="firstLastName" placeholder="First and Last names">
+          </div>
+
+          <hr class="my-4">
+          <!-- <div class="form-group"> -->
+          <h5>Favorite singer:</h5>
+          <select class="form-control" id="singer">
+            <label for="singer"></label>
+            <option>David Bowie</option>
+            <option>Cardi B</option>
+            <option>Bruce Springsteen</option>
+            <option>Conway Twitty</option>
+            <option>Celine Dion</option>
+          </select>
+        <!-- </div> -->
+        
+          <hr class="my-4">
+
+          <h5>Your most productive time:</h5>
+          <div class="radio" id="time">
+            <label>
+              <input type="radio" name="time" value="morning" checked>
+              Morning
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="noon">
+              Around noon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="afternoon">
+              Afternoon
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="time" value="night">
+              Night
+            </label>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-group">
+            <label for="born">
+              <h5>Date of birth:</h5>
+            </label>
+            <input id="born" class="form-control" type="date">
+          </div>
+
+          <!-- Use this to check -->
+          <!-- const dob = $("#born").val(); -->
+
+          <hr class="my-4">
+
+          <div class="form-group">
+            <label for="color">
+              <h5>Pick your favorite color?</h5>
+            </label>
+            <input id="color" class="form-control" type="color">
+          </div>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+        </form>
+      </div>
+
+      <div class="card-hidden">
+        <div class="card border-secondary mb-3" style="max-width: 18rem;">
+          <div class="card-header">Thank you, <span class="firstLastName"></span>!</div>
+          <div class="card-body text-secondary">
+            <h5 class="card-title">This is your confirmation letter.</h5>
+            <p class="card-text">
+              
+              Music choice: <span class="singer"></span>
+              <p>Your most active time: <span class="time"></span></p>
+              <p>You were born on: <span class="dob"></span></p>
+              <p>Your fav color is the color of this card <span class="color"></span></p>
+              
+            
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  
-<p> Some text goes here</p>
-
 </body>
+
 </html>

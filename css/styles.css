@@ -1,10 +1,30 @@
 
 
-/* .row {
-  background-color: bg-secondary;
-  color: text-white;
-} */
+.container {
+  /* background-color: maroon; */
+  max-width: 700px;
+  margin: auto;
+}
+
+.inner-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.card-showing {
+  display: block;
+}
+
+.card-hidden {
+  display: none;
+}
 
 .btn {
   margin: 7px;
 }
+
+.form-control {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
