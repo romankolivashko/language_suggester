@@ -24,16 +24,12 @@ $(document).ready(function() {
     let mobile = $("input:radio[name=mobile]:checked").val();
     let industryLang;
 
-    if (industry === "Banking and Finance") {
-      industryLang = "Python";
-    } else if (industry === "Manufacturing"){
-       industryLang = "C#"; 
-    } else if (industry === "Retail"){
-       industryLang = "JavaScript"; 
-    }  else if (industry === "Media"){
-       industryLang = "JavaScript"; 
-    }  else if (industry === "Healthcare"){
+    if (industry === "Banking and Finance" || industry === "Engineering") {
+      industryLang = "C";
+    } else if (industry === "Manufacturing" || industry === "Healthcare"){
        industryLang = "Java"; 
+    } else if (industry === "Retail" || industry === "Media"){
+       industryLang = "JavaScript"; 
     } 
 
     if (person === "Jack Dorsey") {
@@ -41,22 +37,32 @@ $(document).ready(function() {
     } else if (person === "Sergey Brin"){
       personLang = "Python"; 
     } else if (person === "Bill Gates"){
-      pesrsonLang = "C#"; 
+      personLang = "C#"; 
     } 
+
+    if (mobile === "Yes") {
+      mobile = "interested";
+      mobileLang = "Objective C";
+    }
+    else if (mobile === "No")
+    { 
+      mobile = "not interested";
+      mobileLang = "C++" //another great general purpose language
+    }
+    else {
+      mobileLang = "Swift";
+    }
 
 
     $(".firstLastName").text(name);
     $(".industry").text(industry);
     $(".person").text(person);
     $(".mobile").text(mobile);
-    $(".genStatement").hide();
     $(".personLang").text(personLang);
     $(".industryLang").text(industryLang);
-
+    $(".mobileLang").text(mobileLang);
   });
 });
-
-
 
 
 // $(document).ready(function() {
