@@ -1,35 +1,30 @@
-// $(document).ready(function() {
-//   $(".content").click(function() {
-//     $(".card-showing").toggle();
-//     $(".card-hidden").toggle();
-//   });
-// });
 
-// Engineering: Objective-C
+// Engineering: Objective-C, Swift
 // Banking and Finance: Python
 // Marketing: SQL
-// Car Manufacturing: C
+// Manufacturing: C#
 // Retail: JavaScript
 // Security: C
-// Media: C++
+// Media: C++, JS
 // Healthcare: Java
 // Science: MATLAB
 
-// if (healthcare --> java
-//    finance --> python
-//    retail --> js
-//    manufacturing --> C
-//    media C++) {
-//      then lang1, lang2, lang3
+//let lang;
+
+// if (industry && islandPerson && mobile = "yes") {
+//      then 
+//      return industry + person + mobile lang;
 //    }
 
-// else if (mobile --> ObjC, Swift or Java)
+// else if (industry && person  && mobile = "no")
 //    {
-//      lang 1, lang2, lang3
+//      then 
+//      return industry + person + "C++"; //great for beginners
 //    }
    
-// else (sceince --> MATLAB) {
-//      lang1
+// else {
+//      
+//      return Javascript, Python, Swift;
 // }
    
          
@@ -43,18 +38,13 @@ $(document).ready(function() {
     const name = $("input#firstLastName").val();
     const industry = $("select#industry").val();
     const person = $("select#person").val();
-    // const mobile = $("input#mobile").val();
-    // ("input:radio[name=operator]:checked").val()
     const mobile = $("input:radio[name=mobile]:checked").val();
-    // const dob = $("input#born").val();
-    // const color = $("input#color").val();
 
     $(".firstLastName").text(name);
     $(".industry").text(industry);
     $(".person").text(person);
     $(".mobile").text(mobile);
-    // $(".dob").text(dob);
-    // $(".color").text(color);
+
 
   });
 });
