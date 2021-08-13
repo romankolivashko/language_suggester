@@ -12,8 +12,8 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-4">Survey mobile!</h1>
-      <p class="lead">This is a simple questionaire, it was designed to help you decide what language you want to strat firts. After answering number of questions below this app will suggest few languages best suited for you.</p>
+      <h1 class="display-4">So you dont know what programing language to pick!</h1>
+      <p class="lead">This is a simple questionaire, it was designed to help you deciding what language you want to strat with. After answering few simple questions below this app will suggest few languages best suited for you.</p>
       <hr class="my-4">
 
       <div class="inner-container card-showing">
@@ -21,9 +21,9 @@
         <form>
           <div class="form-group">
             <label for="firstLastName">
-              <h5>Some info about you</h5>
+              <h5>First some info about you:</h5>
             </label>
-            <input type="text" class="form-control" id="firstLastName" placeholder="First and Last names">
+            <input type="text" class="form-control" id="firstLastName" placeholder="Your name">
           </div>
 
           <hr class="my-4">
@@ -31,34 +31,46 @@
           <h5>What industry would you prefer to work as as Software Developer?</h5>
           <select class="form-control" id="industry">
             <label for="industry"></label>
-            <option>David Bowie</option>
-            <option>Cardi B</option>
-            <option>Bruce Springsteen</option>
-            <option>Conway Twitty</option>
-            <option>Celine Dion</option>
+            <option>Engineering</option>
+            <option>Banking and Finance</option>
+            <option>Car Manufacturing</option>
+            <option>Retail</option>
+            <option>Media</option>
+            <option>Healthcare</option>
           </select>
         <!-- </div> -->
         
+        <hr class="my-4">
+        <!-- <div class="form-group"> -->
+        <h5>Who would you rather have lunch with?</h5>
+        <select class="form-control" id="person">
+          <label for="person"></label>
+          <option>Jack Dorsey</option>
+          <option>Sergey Brin</option>
+          <option>Bill Gates</option>
+        </select>
+      <!-- </div> -->
+
           <hr class="my-4">
 
           <h5>Would you prefer deveolping solutions for mobile devices?</h5>
           <div class="radio" id="mobile">
             <label>
               <input type="radio" name="mobile" value="Yes" checked>
-              Morning
+              Yes
             </label>
           </div>
 
           <div class="radio">
             <label>
               <input type="radio" name="mobile" value="No">
-              Around noon
+              No
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="mobile" value="Maybe">
-              Afternoon
+              Maybe
             </label>
           </div>
 <!-- 
@@ -95,10 +107,11 @@
             <h5 class="card-title">This is your confirmation letter.</h5>
             <p class="card-text">
               
-              Music choice: <span class="singer"></span>
-              <p>Your most active mobile: <span class="mobile"></span></p>
-              <p>You were born on: <span class="dob"></span></p>
-              <p>Your fav color is the color of this card <span class="color"></span></p>
+              Since you will prefer to work in: <span class="industry"></span>
+              <p>Clearly you like <span class="person"></span></p>
+              <p>Your prefer working with mobile platforms: <span class="mobile"></span></p>
+              <!-- <p>You were born on: <span class="dob"></span></p> -->
+              <!-- <p>Your fav color is the color of this card <span class="color"></span></p> -->
               
             
             </p>

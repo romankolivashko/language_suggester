@@ -15,22 +15,22 @@
 // Healthcare: Java
 // Science: MATLAB
 
-if (healthcare --> java
-   finance --> python
-   retail --> js
-   manufacturing --> C
-   media C++) {
-     then lang1, lang2, lang3
-   }
+// if (healthcare --> java
+//    finance --> python
+//    retail --> js
+//    manufacturing --> C
+//    media C++) {
+//      then lang1, lang2, lang3
+//    }
 
-else if (mobile --> ObjC, Swift or Java)
-   {
-     lang 1, lang2, lang3
-   }
+// else if (mobile --> ObjC, Swift or Java)
+//    {
+//      lang 1, lang2, lang3
+//    }
    
-else (sceince --> MATLAB) {
-     lang1
-}
+// else (sceince --> MATLAB) {
+//      lang1
+// }
    
          
 
@@ -41,18 +41,20 @@ $(document).ready(function() {
     $(".card-hidden").show();
 
     const name = $("input#firstLastName").val();
-    const industry = $("select industry").val();
+    const industry = $("select#industry").val();
+    const person = $("select#person").val();
     // const mobile = $("input#mobile").val();
     // ("input:radio[name=operator]:checked").val()
     const mobile = $("input:radio[name=mobile]:checked").val();
-    const dob = $("input#born").val();
-    const color = $("input#color").val();
+    // const dob = $("input#born").val();
+    // const color = $("input#color").val();
 
     $(".firstLastName").text(name);
-    $(" industry").text(industry);
+    $(".industry").text(industry);
+    $(".person").text(person);
     $(".mobile").text(mobile);
-    $(".dob").text(dob);
-    $(".color").text(color);
+    // $(".dob").text(dob);
+    // $(".color").text(color);
 
   });
 });
