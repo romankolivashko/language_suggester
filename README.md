@@ -1,6 +1,6 @@
 # _Programming Language Suggester App_
 
-#### _This is an application for people interested in coding to decide which language they should learn first._
+#### _This application is for people interested in coding that need to decide which language they should learn first._
 
 #### By _**Roman Kolivashko**_
 
@@ -13,8 +13,8 @@
 
 ## Description
 
-_This application was designed for people interested in coding, so they could easily decide which language they should learn first. There is a number of questions, each question will target specific programing language. User will recive a personalized profile card with up to three languages to pick from.
-_
+This application was designed for people interested in coding, so they could easily decide which language they should learn first. There is a number of questions, each question will target specific programing language. User will recive a personalized profile card with up to three languages to pick from.
+
 ## Setup/Installation Requirements
 
 * _Run_ `https://github.com/romankolivashko/language_suggester.git`

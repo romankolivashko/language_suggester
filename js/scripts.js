@@ -20,15 +20,18 @@ $(document).ready(function() {
     let name = $("input#firstLastName").val();
     let industry = $("select#industry").val();
     let person = $("select#person").val();
+    let personIsland = $("select#personIsland").val();
     let mobile = $("input:radio[name=mobile]:checked").val();
+    let strictRules = $("input:radio[name=strictRules]:checked").val();
     let industryLang;
-    let url;
+    let strictRulesLang;
+    let personIslandLang;
 
     if (name === "") {
       name = "Beautiful Stranger";
     }
 
-    if (industry === "Banking and Finance" || industry === "Engineering") {
+    if (industry === "Banking and Finance" || industry === "Engineering" ) {
       industryLang = "C";
       // url  = "https://www.w3schools.com";
     } else if (industry === "Manufacturing" || industry === "Healthcare"){
@@ -43,6 +46,27 @@ $(document).ready(function() {
       personLang = "Python"; 
     } else if (person === "Bill Gates"){
       personLang = "C#"; 
+    } 
+
+    if (strictRules === "Yes") {
+      strictRules = "strict";
+      strictRulesLang = "Python";
+    }
+    else if (strictRules === "No")
+    { 
+      strictRules = "laid back";
+      mobileLang = "Haskell";
+    }
+
+
+    if (personIsland === "Einstein") {
+      personLang = "MATLAB";
+    } else if (person === "Oprah Winfrey"){
+      personLang = "JavaScript"; 
+    } else if (person === "Steve Irwin"){
+      personLang = "Python"; 
+    } else if (person === "Grace Hopper"){
+      personLang = "COBOL"; 
     } 
 
     if (mobile === "Yes") {
@@ -62,12 +86,16 @@ $(document).ready(function() {
 
     $(".firstLastName").text(name);
     $(".industry").text(industry);
-    $(".person").text(person);
-    $(".mobile").text(mobile);
-    $(".personLang").text(personLang);
     $(".industryLang").text(industryLang);
-    // $(".industryLangLearnMore").text(url);
+    $(".person").text(person);
+    $(".personLang").text(personLang);
+    $(".personIsland").text(personIsland);
+    $(".personIslandLang").text(personIslandLang);
+    $(".strictRules").text(strictRules);
+    $(".strictRulesLang").text(strictRulesLang);
+    $(".mobile").text(mobile);
     $(".mobileLang").text(mobileLang);
+    
   });
 });
 
