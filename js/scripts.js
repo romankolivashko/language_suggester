@@ -27,19 +27,22 @@ $(document).ready(function() {
     let strictRulesLang;
     let personIslandLang;
 
+
+    //In case user does not enter the name
     if (name === "") {
       name = "Beautiful Stranger";
     }
 
+    //Match industry to its most used language
     if (industry === "Banking and Finance" || industry === "Engineering" ) {
       industryLang = "C";
-      // url  = "https://www.w3schools.com";
     } else if (industry === "Manufacturing" || industry === "Healthcare"){
        industryLang = "Java"; 
     } else if (industry === "Retail" || industry === "Media"){
        industryLang = "JavaScript"; 
     } 
 
+    //Match language to famous tech figures
     if (person === "Jack Dorsey") {
       personLang = "Ruby";
     } else if (person === "Sergey Brin"){
@@ -48,6 +51,7 @@ $(document).ready(function() {
       personLang = "C#"; 
     } 
 
+    //Identify strict vs non-strict languages
     if (strictRules === "Yes") {
       strictRules = "strict";
       strictRulesLang = "Python";
@@ -58,7 +62,7 @@ $(document).ready(function() {
       mobileLang = "Haskell";
     }
 
-
+   //Match language based on subconscious perception of a non-tech well-known person
     if (personIsland === "Einstein") {
       personLang = "MATLAB";
     } else if (person === "Oprah Winfrey"){
@@ -69,6 +73,7 @@ $(document).ready(function() {
       personLang = "COBOL"; 
     } 
 
+    //Match mobile language
     if (mobile === "Yes") {
       mobile = "interested";
       mobileLang = "Objective C";
@@ -83,7 +88,7 @@ $(document).ready(function() {
       mobileLang = "Swift";
     }
 
-
+    //Pass values in
     $(".firstLastName").text(name);
     $(".industry").text(industry);
     $(".industryLang").text(industryLang);

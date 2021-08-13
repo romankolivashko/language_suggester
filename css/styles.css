@@ -1,9 +1,22 @@
+body {
+  /* background-color:  #8EE4AF; */
+  /* background-color:  #FBE8A6; */
+  /* background-color: #FEF9C7; */
+  background-color: #FCE181;
 
+}
 
 .container {
-  /* background-color: maroon; */
   max-width: 700px;
   margin: auto;
+  padding-top: 1em;
+}
+
+.jumbotron {
+  /* background-color: #5CDB95; */
+  /* background-color: #F4976C; */
+  background-color: #9FEDD7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .inner-container {
@@ -19,15 +32,18 @@
   display: none;
 }
 
+.card {
+  /* background-color: #8EE4AF; */
+  background-color: #026670;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .btn {
   margin: 7px;
+  background-color: #026670;
 }
 
 .form-control {
   margin-bottom: 15px;
   padding-bottom: 10px;
-}
-
-.genStatement {
-  display: none;
 }
