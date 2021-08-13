@@ -5,22 +5,52 @@
 //   });
 // });
 
+// Engineering: Objective-C
+// Banking and Finance: Python
+// Marketing: SQL
+// Car Manufacturing: C
+// Retail: JavaScript
+// Security: C
+// Media: C++
+// Healthcare: Java
+// Science: MATLAB
+
+if (healthcare --> java
+   finance --> python
+   retail --> js
+   manufacturing --> C
+   media C++) {
+     then lang1, lang2, lang3
+   }
+
+else if (mobile --> ObjC, Swift or Java)
+   {
+     lang 1, lang2, lang3
+   }
+   
+else (sceince --> MATLAB) {
+     lang1
+}
+   
+         
+
+
 $(document).ready(function() {
   $(".btn").click(function() {
     $(".card-showing").hide();
     $(".card-hidden").show();
 
     const name = $("input#firstLastName").val();
-    const singer = $("select#singer").val();
-    // const time = $("input#time").val();
+    const industry = $("select industry").val();
+    // const mobile = $("input#mobile").val();
     // ("input:radio[name=operator]:checked").val()
-    const time = $("input:radio[name=time]:checked").val();
+    const mobile = $("input:radio[name=mobile]:checked").val();
     const dob = $("input#born").val();
     const color = $("input#color").val();
 
     $(".firstLastName").text(name);
-    $(".singer").text(singer);
-    $(".time").text(time);
+    $(" industry").text(industry);
+    $(".mobile").text(mobile);
     $(".dob").text(dob);
     $(".color").text(color);
 
