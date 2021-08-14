@@ -1,4 +1,4 @@
-//Language use legend
+//Language use matching legend
 //---------------------------------
 // python     -person
 // c#         -person
