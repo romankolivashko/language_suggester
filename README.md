@@ -17,8 +17,8 @@ This application was designed for people interested in coding, so they could eas
 
 ## Setup/Installation Requirements
 
-* _Run_ `https://github.com/romankolivashko/language_suggester.git`
-* _Open `index.html` file in browser._
+* _Run_ `git clone https://github.com/romankolivashko/language_suggester.git`
+* _Open `index.html` file in a browser of choice._
 * _Replace all personal info with your own name._
 
 ## How to access the app from the web
