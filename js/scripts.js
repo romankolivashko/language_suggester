@@ -26,6 +26,7 @@ $(document).ready(function() {
     let industryLang;
     let strictRulesLang;
     let personIslandLang;
+    let personLang;
 
 
     //In case user does not enter the name
@@ -64,13 +65,13 @@ $(document).ready(function() {
 
    //Match language based on subconscious perception of a non-tech well-known person
     if (personIsland === "Einstein") {
-      personLang = "MATLAB";
+      personIslandLang = "MATLAB";
     } else if (person === "Oprah Winfrey"){
-      personLang = "JavaScript"; 
+      personIslandLang = "JavaScript"; 
     } else if (person === "Steve Irwin"){
-      personLang = "Python"; 
+      personIslandLang = "Python"; 
     } else if (person === "Grace Hopper"){
-      personLang = "COBOL"; 
+      personIslandLang = "COBOL"; 
     } 
 
     //Match mobile language
